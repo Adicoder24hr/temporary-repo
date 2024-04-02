@@ -1,0 +1,260 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* navigation bar: logo and Image */
+#logo{
+    margin:10px 34px;
+}
+/* image */
+#logo img{
+    height: 110px;
+    width: 121px;
+    border: 2px solid black;
+    border-radius: 97px;
+    margin: 5px 9px;
+}
+/* Navigation bar: list styling */
+#navbar ul{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    background-color: black;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 9px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* search button */
+/* #search{
+    position: absolute;
+    right: 29px;
+} */
+/* button */
+.btn{
+    display: inline;
+    position: absolute;
+    right: 202px;
+    top: 0px;
+    
+}
+/* Home Section  */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.73;
+}
+#home h1{
+    color:rgb(255, 0, 221);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+#home p{
+    color:crimson;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family:  'Roboto Slab', serif;
+    text-align: center;
+}
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin:2px 55px;
+    background: #d78894;
+    margin-bottom: 20px;
+    box-shadow: 7px 6px 3px;
+    transition: all 0.5s ease-in-out 0.2s ;
+}
+#services .box:hover{
+    border-radius: 34px;
+    background-color: palevioletred;
+    z-index: 2;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 23px;
+}
+#services .box p{
+    font-family:  'Roboto Slab', serif;
+}
+#services .box h2{
+    font-family: 'Lobster', cursive;
+    color: aqua;
+}
+#services-container h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.1rem;
+    font-family: 'Lobster', cursive;
+}
+
+/* clients section */
+#client-section{
+    position: relative;
+}
+#client-section h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.1rem;
+    font-family: 'Lobster', cursive;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+
+/* contact-section */
+#contact{
+    height: 124px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../bg4.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 3px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+}
+/* #contact-box textarea{
+    vertical-align: top;
+    margin-top: 12px;
+} */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+/* utility classes */
+.h-primary{
+    font-family: 'Lobster', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.button{
+    padding: 6px 20px;
+    border: 3px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: lightsalmon;
+    color: black;
+}
+.btn{
+    cursor: pointer;
+}
+/* .btn:hover{
+    background-color: darksalmon;
+    color: aqua;
+} */
+.center{
+    text-align: center;
+    
+}
